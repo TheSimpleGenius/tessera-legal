@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tessera Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+    color: #1a1a1a;
+    background: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #0f1625; }
+    a { color: #5B8DEF; }
+    code { background: #1A2640; }
+  }
+  h1 { font-size: 1.9rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2rem; border-bottom: 1px solid rgba(128,128,128,0.25); padding-bottom: 0.3rem; }
+  .updated { color: #888; font-style: italic; margin-top: 0; }
+  a { color: #2563eb; }
+  ul { padding-left: 1.4rem; }
+  li { margin: 0.35rem 0; }
+  strong { font-weight: 600; }
+</style>
+</head>
+<body>
+<h1>Tessera Privacy Policy</h1>
+<p class="updated">Last updated: 18 July 2026</p>
+
+<p>Tessera is a personal habit- and event-logging calendar app. This policy explains what data the app handles, where it lives, and your choices.</p>
+
+<h2>Summary</h2>
+<ul>
+  <li><strong>Local-first.</strong> All your logging data is stored on your device. You can use every feature of Tessera without creating an account.</li>
+  <li><strong>Optional sync.</strong> If you create an account, your data is synced to our backend (Supabase) so it can follow you across devices.</li>
+  <li><strong>No ads, no data sales.</strong> We do not sell, rent, or share your data with advertisers or data brokers.</li>
+</ul>
+
+<h2>Data the app stores</h2>
+<p><strong>On your device (always):</strong></p>
+<ul>
+  <li>Activities you define (names, icons, fields, targets)</li>
+  <li>Daily logs and field values you enter</li>
+  <li>Journal entries, including any images you attach</li>
+  <li>App preferences (theme, display settings)</li>
+</ul>
+<p>This data is stored in the app's private storage and is not accessible to other apps.</p>
+
+<p><strong>On our servers (only if you sign in):</strong></p>
+<ul>
+  <li>Your email address (used as your account identifier)</li>
+  <li>The same activities, logs, journal text, and journal images as above, synced so they are available on your other devices</li>
+</ul>
+<p>Sync data is stored with <a href="https://supabase.com/privacy">Supabase</a>. Every record is scoped to your account: row-level security ensures no other user can read or modify your data. Journal images are stored in a private bucket accessible only to your account via short-lived signed URLs.</p>
+
+<p><strong>Crash reports (release builds only):</strong></p>
+<p>If the app crashes, a technical crash report (stack trace, device model, OS version) may be sent to <a href="https://sentry.io/privacy/">Sentry</a> to help us fix bugs. Crash reports are configured to exclude personally identifying information; your logging data is never included.</p>
+
+<h2>Sign-in options</h2>
+<ul>
+  <li><strong>Email + password</strong> — handled by Supabase Auth. Passwords are hashed; we never see them.</li>
+  <li><strong>Google Sign-In</strong> — we receive only your email address and basic profile from Google. We do not access your contacts, calendar, or other Google data.</li>
+</ul>
+
+<h2>What we do NOT collect</h2>
+<ul>
+  <li>No analytics or behavioural tracking</li>
+  <li>No advertising identifiers</li>
+  <li>No location data</li>
+  <li>No contacts, photos (other than images you explicitly attach to journal entries), or other device data</li>
+</ul>
+
+<h2>Data retention and deletion</h2>
+<ul>
+  <li><strong>Local data</strong> stays on your device until you delete it (Settings &rarr; Clear logging history) or uninstall the app.</li>
+  <li><strong>Account deletion</strong> is available in-app: Settings &rarr; Delete account. This permanently deletes your account, all synced records, and all uploaded images from our servers. It cannot be undone. Data on your device is kept unless you clear it separately.</li>
+  <li><strong>Sign out</strong> stops syncing but keeps both local and server data intact.</li>
+</ul>
+
+<h2>Children</h2>
+<p>Tessera is not directed at children under 13, and we do not knowingly collect data from them.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the updated version will be published at the same URL with a revised date.</p>
+
+<h2>Contact</h2>
+<p>Questions or requests: <strong><a href="mailto:simplegenius351@gmail.com">simplegenius351@gmail.com</a></strong></p>
+</body>
+</html>
