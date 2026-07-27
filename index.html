@@ -31,7 +31,7 @@
 </head>
 <body>
 <h1>Tessera Privacy Policy</h1>
-<p class="updated">Last updated: 18 July 2026</p>
+<p class="updated">Last updated: 27 July 2026</p>
 
 <p>Tessera is a personal habit- and event-logging calendar app. This policy explains what data the app handles, where it lives, and your choices.</p>
 
@@ -62,10 +62,19 @@
 <p><strong>Crash reports (release builds only):</strong></p>
 <p>If the app crashes, a technical crash report (stack trace, device model, OS version) may be sent to <a href="https://sentry.io/privacy/">Sentry</a> to help us fix bugs. Crash reports are configured to exclude personally identifying information; your logging data is never included.</p>
 
+<h2>What happens when you sign in</h2>
+<p>Nothing leaves your device until you sign in. At that point:</p>
+<ul>
+  <li>If your account has no data yet, the data already on this device is uploaded to it.</li>
+  <li>If your account already has data <strong>and</strong> this device has data of its own, Tessera asks you which to keep before uploading anything. Choosing &ldquo;Keep both&rdquo; uploads this device&rsquo;s data and combines it with your account&rsquo;s; choosing &ldquo;Use my account&rsquo;s data&rdquo; replaces the copy on this device and uploads nothing.</li>
+  <li>While you are signed out, or if you chose &ldquo;Use without an account&rdquo;, nothing is uploaded at all.</li>
+</ul>
+<p>Signing out stops syncing. It does not delete anything, on the device or on our servers.</p>
+
 <h2>Sign-in options</h2>
 <ul>
-  <li><strong>Email + password</strong> ‚Äî handled by Supabase Auth. Passwords are hashed; we never see them.</li>
-  <li><strong>Google Sign-In</strong> ‚Äî we receive only your email address and basic profile from Google. We do not access your contacts, calendar, or other Google data.</li>
+  <li><strong>Email + password</strong> — handled by Supabase Auth. Passwords are hashed; we never see them.</li>
+  <li><strong>Google Sign-In</strong> — we receive only your email address and basic profile from Google. We do not access your contacts, calendar, or other Google data.</li>
 </ul>
 
 <h2>What we do NOT collect</h2>
