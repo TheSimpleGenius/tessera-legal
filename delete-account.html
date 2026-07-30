@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete your Tessera account</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+    color: #1a1a1a;
+    background: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #0f1625; }
+    a { color: #5B8DEF; }
+    code { background: #1A2640; }
+  }
+  h1 { font-size: 1.9rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2rem; border-bottom: 1px solid rgba(128,128,128,0.25); padding-bottom: 0.3rem; }
+  .updated { color: #888; font-style: italic; margin-top: 0; }
+  a { color: #2563eb; }
+  ul, ol { padding-left: 1.4rem; }
+  li { margin: 0.45rem 0; }
+  strong { font-weight: 600; }
+  .card {
+    background: #f6f7fb;
+    color: #111111;
+    border: 1px solid rgba(128,128,128,0.25);
+    border-left: 4px solid #2563eb;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin: 1.25rem 0;
+  }
+  table { width: 100%; border-collapse: collapse; margin-top: 0.75rem; }
+  th, td { text-align: left; padding: 0.5rem 0.6rem; border-bottom: 1px solid rgba(128,128,128,0.25); vertical-align: top; }
+  th { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.03em; color: #6b6b6b; font-weight: 600; }
+
+  /* Dark-mode overrides MUST come after the base rules above, or source order
+     wins and the card renders near-white with light text. */
+  @media (prefers-color-scheme: dark) {
+    .card { background: #1A2640; color: #f0f2f8; border-color: rgba(128,128,128,0.35); border-left-color: #5B8DEF; }
+    th { color: #9aa3b8; }
+    .updated { color: #9aa3b8; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Delete your Tessera account</h1>
+<p class="updated">App: <strong>Tessera</strong> &middot; Developer: <strong>TheSimpleGenius</strong> &middot; Last updated: 30 July 2026</p>
+
+<p>This page explains how to delete your Tessera account and everything stored with it. There are two
+routes: from inside the app, or by email if you can no longer reach the app.</p>
+
+<h2>Option 1 &mdash; delete from inside the app</h2>
+<ol>
+  <li>Open <strong>Tessera</strong>.</li>
+  <li>Tap the <strong>settings</strong> icon in the top right of the calendar screen.</li>
+  <li>Scroll to the bottom and tap <strong>Delete account</strong>.</li>
+  <li>Confirm when prompted.</li>
+</ol>
+<div class="card">
+  Deletion is <strong>immediate and permanent</strong>. Your account and every synced record tied to it are
+  removed from our servers straight away. There is no recovery period and no undo.
+</div>
+
+<h2>Option 2 &mdash; request deletion by email</h2>
+<p>If you have uninstalled the app or cannot sign in, email
+<a href="mailto:simplegenius351@gmail.com?subject=Delete%20my%20Tessera%20account">simplegenius351@gmail.com</a>
+<strong>from the email address on your account</strong>, with the subject
+<strong>&ldquo;Delete my Tessera account&rdquo;</strong>.</p>
+<p>We use the sending address to verify ownership, so a request from a different address cannot be
+actioned. Requests are honoured within <strong>30 days</strong>.</p>
+
+<h2>What gets deleted</h2>
+<table>
+  <thead>
+    <tr><th>Data</th><th>What happens</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Your account and email address</td><td><strong>Deleted</strong> from our servers</td></tr>
+    <tr><td>Activities you defined</td><td><strong>Deleted</strong> from our servers</td></tr>
+    <tr><td>Daily logs and field values</td><td><strong>Deleted</strong> from our servers</td></tr>
+    <tr><td>Journal entries</td><td><strong>Deleted</strong> from our servers</td></tr>
+    <tr><td>Journal images</td><td><strong>Deleted</strong> from our private storage bucket</td></tr>
+    <tr><td>Data stored on your device</td><td><strong>Kept</strong> &mdash; see below</td></tr>
+    <tr><td>Crash reports</td><td><strong>Kept</strong> &mdash; see below</td></tr>
+  </tbody>
+</table>
+
+<p>No additional retention period applies to the deleted items. They are removed when the deletion runs,
+not queued for later cleanup.</p>
+
+<h2>Data kept on your device</h2>
+<p>Deleting your account does not touch the copy of your data stored locally on your phone &mdash; that
+copy is yours, and Tessera works fully offline without an account. To remove it as well:</p>
+<ul>
+  <li><strong>Settings &rarr; Clear logging history</strong> deletes your logs, field values and journal
+    entries from the device (and from our servers, while you are still signed in), or</li>
+  <li>Uninstall the app, which removes all of its local storage.</li>
+</ul>
+
+<h2>Delete some data without deleting your account</h2>
+<p>If you want to clear your logged history but keep your account, use
+<strong>Settings &rarr; Clear logging history</strong> inside the app. While you are signed in this removes
+the data from our servers as well as from your device. Your account, and any activities you have
+defined, remain.</p>
+
+<h2>Crash reports</h2>
+<p>Crash reports are technical diagnostics (stack trace, device model, OS version) collected by
+<a href="https://sentry.io/privacy/">Sentry</a> in release builds only. They are configured to exclude
+personally identifying information and contain none of your logging data, so they are not linked to your
+account and are not affected by account deletion. They age out under Sentry's own retention schedule.</p>
+
+<h2>Questions</h2>
+<p>Email <a href="mailto:simplegenius351@gmail.com">simplegenius351@gmail.com</a>.</p>
+<p>See also the <a href="./">Tessera Privacy Policy</a>.</p>
+
+</body>
+</html>
