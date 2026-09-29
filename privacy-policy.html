@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tessera Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2.5rem 1.25rem 4rem;
+    color: #1a1a1a;
+    background: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #0f1625; }
+    a { color: #5B8DEF; }
+    code { background: #1A2640; }
+  }
+  h1 { font-size: 1.9rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2rem; border-bottom: 1px solid rgba(128,128,128,0.25); padding-bottom: 0.3rem; }
+  .updated { color: #888; font-style: italic; margin-top: 0; }
+  a { color: #2563eb; }
+  ul { padding-left: 1.4rem; }
+  li { margin: 0.35rem 0; }
+  strong { font-weight: 600; }
+</style>
+</head>
+<body>
+<h1>Tessera Privacy Policy</h1>
+<p class="updated">Last updated: 29 September 2026</p>
+
+<p>Tessera is a personal habit- and event-logging calendar app. This policy explains what data the app handles, where it lives, and your choices.</p>
+
+<h2>Summary</h2>
+<ul>
+  <li><strong>Local-first.</strong> All your logging data is stored on your device. You can use every feature of Tessera without creating an account.</li>
+  <li><strong>Optional sync.</strong> If you create an account, your data is synced to our backend (Supabase) so it can follow you across devices.</li>
+  <li><strong>No ads, no data sales.</strong> We do not sell, rent, or share your data with advertisers or data brokers.</li>
+</ul>
+
+<h2>Data the app stores</h2>
+<p><strong>On your device (always):</strong></p>
+<ul>
+  <li>Activities you define (names, icons, fields, targets)</li>
+  <li>Daily logs and field values you enter</li>
+  <li>Journal entries, including any images you attach</li>
+  <li>App preferences (theme, display settings)</li>
+</ul>
+<p>This data is stored in the app's private storage and is not accessible to other apps.</p>
+
+<p><strong>On our servers (only if you sign in):</strong></p>
+<ul>
+  <li>Your email address (used as your account identifier)</li>
+  <li>The same activities, logs, journal text, and journal images as above, synced so they are available on your other devices</li>
+</ul>
+<p>Sync data is stored with <a href="https://supabase.com/privacy">Supabase</a>. Every record is scoped to your account: row-level security ensures no other user can read or modify your data. Journal images are stored in a private bucket accessible only to your account via short-lived signed URLs.</p>
+
+<p><strong>Crash reports (release builds only):</strong></p>
+<p>If the app crashes, a technical crash report (stack trace, device model, OS version) may be sent to <a href="https://sentry.io/privacy/">Sentry</a> to help us fix bugs. Crash reports are configured to exclude personally identifying information; your logging data is never included.</p>
+
+<p><strong>Bug reports (only if you send one):</strong></p>
+<p>If you send a report from Settings &rarr; Report a bug, it reaches us with the message you write, the app version and build, your phone&rsquo;s manufacturer and model, its Android version, whether you were signed in, and the state of sync at the time. Nothing you have logged or written elsewhere in the app is included. You can send a report without an account; if you are signed in, it is linked to your account. If you put your email address in the message, we may use it to reply.</p>
+<p>To stop a faulty app or a script flooding us, each IP address can send ten reports a day. To count them, we store a hashed form of the address a report came from, not the address itself, and clear it after 90 days. Reports are stored with <a href="https://supabase.com/privacy">Supabase</a> and emailed to the developer once a week through <a href="https://resend.com/legal/privacy-policy">Resend</a>.</p>
+
+<h2>What happens when you sign in</h2>
+<p>Apart from crash reports and any bug report you choose to send (both above), nothing leaves your device until you sign in. At that point:</p>
+<ul>
+  <li>If your account has no data yet, the data already on this device is uploaded to it.</li>
+  <li>If your account already has data <strong>and</strong> this device has data of its own, Tessera asks you which to keep before uploading anything. Choosing &ldquo;Keep both&rdquo; uploads this device&rsquo;s data and combines it with your account&rsquo;s; choosing &ldquo;Use my account&rsquo;s data&rdquo; replaces the copy on this device and uploads nothing; choosing &ldquo;Cancel&rdquo; signs you back out, uploads nothing, and leaves this device&rsquo;s data unchanged.</li>
+  <li>While you are signed out, or if you chose &ldquo;Use without an account&rdquo;, none of your logging data is uploaded at all.</li>
+</ul>
+<p>Signing out stops syncing. It does not delete anything, on the device or on our servers.</p>
+
+<h2>Sign-in options</h2>
+<ul>
+  <li><strong>Email + password</strong> — handled by Supabase Auth. Passwords are hashed; we never see them.</li>
+  <li><strong>Google Sign-In</strong> — we receive only your email address and basic profile from Google. We do not access your contacts, calendar, or other Google data.</li>
+</ul>
+
+<h2>What we do NOT collect</h2>
+<ul>
+  <li>No analytics or behavioural tracking</li>
+  <li>No advertising identifiers</li>
+  <li>No location data</li>
+  <li>No contacts, photos (other than images you explicitly attach to journal entries), or other device data beyond the model and Android version in a crash or bug report</li>
+</ul>
+
+<h2>Data retention and deletion</h2>
+<ul>
+  <li><strong>Local data</strong> stays on your device until you delete it (Settings &rarr; Clear logging history) or uninstall the app.</li>
+  <li><strong>Account deletion</strong> is available in-app: Settings &rarr; Delete account. This permanently deletes your account, all synced records, all uploaded images, and any bug reports you sent while signed in from our servers. It cannot be undone. Data on your device is kept unless you clear it separately.</li>
+  <li><strong>Bug reports</strong> are kept until they have been dealt with, and the hashed IP address on each is cleared after 90 days. A report sent while signed out is not linked to any account, so account deletion cannot find it: email us roughly when you sent it and what it said, and we will delete it.</li>
+  <li><strong>Sign out</strong> stops syncing but keeps both local and server data intact.</li>
+</ul>
+
+<h2 id="delete-account">Delete your Tessera account</h2>
+<p>To delete your account and all data associated with it (activities, logs, journal entries, uploaded images, and bug reports sent while signed in):</p>
+<ol>
+  <li>Open Tessera and go to <strong>Settings &rarr; Delete account</strong>, then confirm. Deletion is immediate and permanent.</li>
+  <li>If you can no longer access the app, email <a href="mailto:support.tessera@gmail.com">support.tessera@gmail.com</a> from the email address on your account with the subject &ldquo;Delete my Tessera account&rdquo;. Requests are honoured within 30 days.</li>
+</ol>
+<p>In both cases every synced record, image and bug report tied to your account is permanently removed from our servers. Data stored locally on your device is unaffected until you clear it or uninstall the app.</p>
+
+<h2>Children</h2>
+<p>Tessera is not directed at children under 13, and we do not knowingly collect data from them.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the updated version will be published at the same URL with a revised date.</p>
+
+<h2>Contact</h2>
+<p>Questions or requests: <strong><a href="mailto:support.tessera@gmail.com">support.tessera@gmail.com</a></strong></p>
+</body>
+</html>
