@@ -52,7 +52,7 @@
 <body>
 
 <h1 id="delete-account">Delete your Tessera account</h1>
-<p class="updated">App: <strong>Tessera</strong> &middot; Developer: <strong>TheSimpleGenius</strong> &middot; Last updated: 29 September 2026</p>
+<p class="updated">App: <strong>Tessera</strong> &middot; Developer: <strong>TheSimpleGenius</strong> &middot; Last updated: 30 September 2026</p>
 
 <p>This page explains how to delete your Tessera account and everything stored with it. There are two
 routes: from inside the app, or by email if you can no longer reach the app.</p>
@@ -92,8 +92,10 @@ actioned. Requests are honoured within <strong>30 days</strong>.</p>
     <tr><td>Journal entries</td><td><strong>Deleted</strong> from our servers</td></tr>
     <tr><td>Journal images</td><td><strong>Deleted</strong> from our private storage bucket</td></tr>
     <tr><td>Bug reports you sent while signed in</td><td><strong>Deleted</strong> from our servers</td></tr>
+    <tr><td>Usage analytics recorded while you were signed in</td><td><strong>Deleted</strong> from our servers</td></tr>
     <tr><td>Data stored on your device</td><td><strong>Kept</strong> &mdash; see below</td></tr>
     <tr><td>Bug reports sent while signed out</td><td><strong>Kept</strong> &mdash; see below</td></tr>
+    <tr><td>Usage analytics recorded while signed out</td><td><strong>Kept</strong> until they expire &mdash; see below</td></tr>
     <tr><td>Crash reports</td><td><strong>Kept</strong> &mdash; see below</td></tr>
   </tbody>
 </table>
@@ -134,6 +136,13 @@ account and deleted with it. A report sent while signed out is not linked to any
 account cannot find it: email <a href="mailto:support.tessera@gmail.com">support.tessera@gmail.com</a> with
 roughly when you sent it and what it said, and we will delete it. Either way, the hashed IP address stored
 with each report to limit repeat reports is cleared after 90 days.</p>
+<h2>Usage analytics</h2>
+<p>Starting with the update that introduces it, Tessera records which screens and features you use, and
+when, never what you log or write. Each record carries a random ID the app creates the first time it runs,
+and, while you are signed in, your account. Records linked to your account are deleted with it. Records made
+while you were signed out carry only the random ID, which does not identify you, so account deletion cannot
+find them. Every record is deleted 13 months after it is made. To stop them, switch off
+<strong>Settings &rarr; Share usage analytics</strong>.</p>
 <h2>Crash reports</h2>
 <p>Crash reports are technical diagnostics (stack trace, device model, OS version) collected by
 <a href="https://sentry.io/privacy/">Sentry</a> in release builds only. They are configured to exclude
